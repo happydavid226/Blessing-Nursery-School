@@ -1,0 +1,59 @@
+.assign-student {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f5f9f6;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.assign-student h2 {
+    text-align: center;
+    color: #2e5f3e;
+    margin-bottom: 25px;
+}
+
+.assign-student form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.assign-student label {
+    font-weight: 600;
+    color: #3a4b3d;
+}
+
+.assign-student select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #c7d8cc;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.assign-student button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.assign-student button:hover {
+    background-color: #45a049;
+}
+
+.success-message {
+    text-align: center;
+    background-color: #d4edda;
+    color: #2c6537;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #b7dfc5;
+}

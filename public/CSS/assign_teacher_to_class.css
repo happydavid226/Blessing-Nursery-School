@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color : #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding : 60px 0;
+}
+
+.assign-teacher-to-class {
+    background-color : #fff;
+    padding : 30px  40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width : 90%;
+    max-width : 400px;
+}
+
+
+form label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight : bold;
+    color: #333;
+}
+
+form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fefefe;
+    font-size: 15px;
+}
+
+form button {
+    width : 100%;
+    padding : 12px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: #115511;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+p:empty {
+    display: none;
+}
+
+p:contains("successfully"){
+    background-color: #e0f7e9;
+    color: #2e7d32;
+    border: 1px solid #b2dfdb;
+}
+
+p:contains("Error"), p:contains("already"), p:contains("please") {
+    background-color: #ffecec;
+    color: #d8000c;
+    border: 1px solid #f5c6cb;
+}
