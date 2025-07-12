@@ -15,7 +15,7 @@
         <nav>
             <button><a href="#">Home</a></button>
             <button><a href="#">About</a></button>
-            <button><a href="./Login.php">Log in</a></button>
+            <button><a href="./login.php">Log in</a></button>
             <button><a href="./Signup.php">Sign up</a></button>
         </nav>
     </header>

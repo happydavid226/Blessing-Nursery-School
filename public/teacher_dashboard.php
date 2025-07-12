@@ -2,6 +2,7 @@
 
 session_start();
 
+
 if(!isset($_SESSION['teacher_id'])){
     header("Location: teacher_login.php");
     exit();
@@ -25,7 +26,9 @@ $teacher_name = $_SESSION['teacher_name'];
             <ul>
                 <li><a href="view_assigned_classes.php">view My Classes</a></li>
                 <li><a href="view_students.php">View Students</a></li>
+                <li><a href="teacher_enter_marks.php">My Marks</a></li>
                 <li><a href="teacher_logout.php">Logout</a></li>
+                
             </ul>
         </nav>
     </section>

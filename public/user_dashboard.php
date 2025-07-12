@@ -1,5 +1,6 @@
 <?php 
     session_start();
+    var_dump($_SESSION);
     if(!isset($_SESSION['student_id'])){
         header('Location: login.php');
         exit();
@@ -24,6 +25,7 @@
 <body>
     <h1>Welcome <?=  htmlspecialchars($student['first_name'])  ?> !</h1>
     <p>your marks will be displayed here soon</p>
+    <li><a href="user_view_marks.php">View marks</a></li>
     <form action="logout.php" method="post">
         <button type="submit">Log out</button>
     </form>

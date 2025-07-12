@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.teacher-marks-view {
+    max-width: 900px;
+    margin: auto;
+}
+
+.filter-form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+select, button {
+    padding: 6px;
+    font-size: 16px;
+}
+
+.marks-table-wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+.student-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+.student-card h3 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #eee;
+}
