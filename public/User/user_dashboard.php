@@ -5,7 +5,7 @@
         header('Location: login.php');
         exit();
     }
-    require_once "../includes/db.php";
+    require_once "../../includes/db.php";
 
     $stmt = $conn->prepare("select first_name from students where id = ?");
     $stmt->bind_param("i", $_SESSION['student_id']);

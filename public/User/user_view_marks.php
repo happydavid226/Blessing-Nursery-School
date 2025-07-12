@@ -81,5 +81,6 @@ while ($row = $marks_result->fetch_assoc()) {
             <p>No marks available at the moment.</p>
         <?php endif; ?>
     </section>
+    <a href="./user_dashboard.php">Back to dashboard</a>
 </body>
 </html>

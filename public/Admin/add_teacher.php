@@ -75,6 +75,7 @@
             <input type="password" name="password" placeholder="password" required>
             <button type="submit">Add a teacher</button>
         </form>
+        <p><a href="./admin_dashboard.php">back to dashboard</a></p>
 
     </section>
 </body>

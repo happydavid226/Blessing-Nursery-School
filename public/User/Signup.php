@@ -1,6 +1,6 @@
 <?php
     if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['submit'])){
-        require_once "../includes/db.php";
+        require_once "../../includes/db.php";
 
         //collect form data
         $first_name = htmlspecialchars(trim($_POST['first_name']));
@@ -70,7 +70,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
-    <link rel="stylesheet" href="./CSS/signup.css">
+    <link rel="stylesheet" href="../CSS/signup.css">
 </head>
 
 <body>
@@ -99,6 +99,7 @@
             <input type="password" placeholder="Confirm Password" name="second_password">
             <button type="submit" name="submit">Sign up</button>
         </form>
+        <p>have account? <a href="login.php">Log in</a></p>
     </section>
 </body>
 

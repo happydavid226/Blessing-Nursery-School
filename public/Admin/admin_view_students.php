@@ -88,7 +88,9 @@ $result = $stmt->get_result();
                 </tbody>
             </table>
         </div>
+        <p><a href="./admin_dashboard.php">back to dashboard</a></p>
     </section>
+    
 </body>
 
 </html>

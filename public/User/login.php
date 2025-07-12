@@ -5,7 +5,7 @@
         exit();
     }
     if($_SERVER["REQUEST_METHOD"] === "POST"){
-        require_once "../includes/db.php";
+        require_once "../../includes/db.php";
 
         $email = htmlspecialchars(trim($_POST['email']));
         $password = htmlspecialchars(trim($_POST['password']));
@@ -25,7 +25,7 @@
 
                     if(password_verify($password, $hashed_password)) {
                         $_SESSION['student_id'] = $row['id'];
-                        header("Location: user_dashboard.php");
+                        header("Location: ./user_dashboard.php");
                         exit();
                     } else {
                         echo "<script>alert('Incorrect password');</script>";
@@ -50,7 +50,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
-    <link rel="stylesheet" href="./CSS/Login.css">
+    <link rel="stylesheet" href="../CSS/Login.css">
 </head>
 
 <body>
@@ -61,6 +61,7 @@
             <input type="password" placeholder="password" name="password" required>
             <button type="submit">Log in</button>
         </form>
+        <p>don't have account? <a href="./signup.php">Sign up</a></p>
     </section>
 </body>
 
