@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../includes/db.php";
+require_once "../../includes/db.php";
 
 
 if(!isset($_SESSION['student_id'])){
@@ -49,7 +49,7 @@ while ($row = $marks_result->fetch_assoc()) {
 <head>
     <meta charset="UTF-8">
     <title>My Marks</title>
-    <link rel="stylesheet" href="./CSS/user_view_marks.css">
+    <link rel="stylesheet" href="../CSS/user_view_marks.css">
 </head>
 <body>
     <section class="user-marks-view">

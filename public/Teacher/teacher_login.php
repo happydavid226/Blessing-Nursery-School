@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once "../includes/db.php";
+require_once "../../includes/db.php";
 if(isset($_SESSION['teacher_id'])){
     header("Location: teacher_dashboard.php");
 }
@@ -48,7 +48,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Login</title>
-    <link rel="stylesheet" href="./CSS/teacher_login.css">
+    <link rel="stylesheet" href="../CSS/teacher_login.css">
 </head>
 <body>
     <section class="teacher-login">

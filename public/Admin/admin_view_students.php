@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../includes/db.php";
+require_once "../../includes/db.php";
 
 if ($_SESSION['role'] !== 'admin') {
     header("Location: admin_login.php");
@@ -45,7 +45,7 @@ $result = $stmt->get_result();
 <head>
     <meta charset="UTF-8" />
     <title>View Students</title>
-    <link rel="stylesheet" href="./CSS/admin_view_students.css" />
+    <link rel="stylesheet" href="../CSS/admin_view_students.css" />
 </head>
 
 <body>

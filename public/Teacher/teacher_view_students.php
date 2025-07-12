@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once "../includes/db.php";
+require_once "../../includes/db.php";
 
 if(!(isset($_SESSION['teacher_id']) || isset($_SESSION['admin_id']))){
     header("Location: teacher_login.php");
@@ -64,7 +64,7 @@ if($selected_class === 'all'){
 <head>
     <meta charset="UTF-8">
     <title>Teacher View Students</title>
-    <link rel="stylesheet" href="./CSS/teacher_view_students.css">
+    <link rel="stylesheet" href="../CSS/teacher_view_students.css">
 </head>
 <body>
     <section class="teacher-view">

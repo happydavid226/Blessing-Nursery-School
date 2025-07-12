@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-require_once "../includes/db.php";
+require_once "../../includes/db.php";
 
 if(!isset($_SESSION['role']) || $_SESSION['role'] != 'admin'){
     header("Location : admin_login.php");
@@ -23,7 +23,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/view_teachers.css">
+    <link rel="stylesheet" href="../css/view_teachers.css">
     <title>All Teachers</title>
 </head>
 <body>

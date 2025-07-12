@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-require_once "../includes/db.php";
+require_once "../../includes/db.php";
 
 if($_SESSION['role'] != 'admin'){
     header('location: admin_login.php');
@@ -32,7 +32,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Remove Teacher from Class</title>
-    <link rel="stylesheet" href="./CSS/remove_teacher_from_class.css">
+    <link rel="stylesheet" href="../CSS/remove_teacher_from_class.css">
 </head>
 <body>
     <section class="remove-teacher">

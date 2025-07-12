@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once "../includes/db.php";
+    require_once "../../includes/db.php";
 
     if($_SESSION['role'] !== 'admin'){
         header('Location: admin_login.php');
@@ -48,7 +48,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/assign_teacher_to_class.css">
+    <link rel="stylesheet" href="../CSS/assign_teacher_to_class.css">
 </head>
 <body>
     <section class="assign-teacher-to-class">

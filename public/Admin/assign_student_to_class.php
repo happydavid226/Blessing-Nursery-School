@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once "../includes/db.php";
+require_once "../../includes/db.php";
 
 
 if(!($_SESSION['role'] == 'admin' || $_SESSION['role'] == 'teacher')){
@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['assign_id'])){
 <head>
     <meta charset="UTF-8">
     <title>Assign Student to Class</title>
-    <link rel="stylesheet" href="./CSS/assign_student_to_class.css">
+    <link rel="stylesheet" href="../CSS/assign_student_to_class.css">
 </head>
 <body>
     <section class="assign-student">

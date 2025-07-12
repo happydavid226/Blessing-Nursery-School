@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require_once "../includes/db.php";
+require_once "../../includes/db.php";
 
 
 if(!($_SESSION['role'] === 'teacher' || isset($_SESSION['teacher_id']))){
@@ -86,7 +86,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 <head>
     <meta charset="UTF-8">
     <title>Enter Marks</title>
-    <link rel="stylesheet" href="./CSS/teacher_enter_marks.css">
+    <link rel="stylesheet" href="../CSS/teacher_enter_marks.css">
 </head>
 <body>
     <section class="marks-entry">

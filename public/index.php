@@ -17,6 +17,8 @@
             <button><a href="#">About</a></button>
             <button><a href="./login.php">Log in</a></button>
             <button><a href="./Signup.php">Sign up</a></button>
+            <button><a href="./admin/admin_dashboard.php">Admin</a></button>
+            <button><a href="./teacher/teacher_dashboard.php">Teacher</a></button>
         </nav>
     </header>
 

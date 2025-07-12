@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../includes/db.php";
+require_once "../../includes/db.php";
 
 if(!($_SESSION['role'] === 'teacher' || isset($_SESSION['teacher_id']))){
     header("Location: teacher_login.php");
@@ -65,7 +65,7 @@ if($selected_class && $selected_term){
 <head>
     <meta charset="UTF-8">
     <title>Teacher View Marks</title>
-    <link rel="stylesheet" href="./CSS/teacher_view_marks.css">
+    <link rel="stylesheet" href="../CSS/teacher_view_marks.css">
 </head>
 <body>
     <section class="teacher-marks-view">

@@ -17,7 +17,7 @@ $teacher_name = $_SESSION['teacher_name'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Dashboard</title>
-    <link rel="stylesheet" href="./CSS/teacher_dashboard.css">
+    <link rel="stylesheet" href="../CSS/teacher_dashboard.css">
 </head>
 <body>
     <section class="teacher-dashboard">

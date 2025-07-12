@@ -1,7 +1,7 @@
 <?php
     session_start();
     if($_SERVER["REQUEST_METHOD"] === "POST"){
-        require_once "../includes/db.php";
+        require_once "../../includes/db.php";
 
         $email = htmlspecialchars(trim($_POST['email']));
         echo $email;
@@ -48,7 +48,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
-    <link rel="stylesheet" href="./CSS/admin_login.css">
+    <link rel="stylesheet" href="../CSS/admin_login.css">
 </head>
 
 <body>

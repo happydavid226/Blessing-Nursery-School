@@ -5,7 +5,7 @@
         exit();
     }
 
-    require_once "../includes/db.php";
+    require_once "../../includes/db.php";
 
     $success = "";
     $error = "";
@@ -56,7 +56,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add</title>
-    <link rel="stylesheet" href="./CSS/add_teacher.css">
+    <link rel="stylesheet" href="../CSS/add_teacher.css">
 </head>
 
 <body>
