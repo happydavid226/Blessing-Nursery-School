@@ -25,8 +25,9 @@ $teacher_name = $_SESSION['teacher_name'];
         <nav>
             <ul>
                 <li><a href="view_assigned_classes.php">view My Classes</a></li>
-                <li><a href="view_students.php">View Students</a></li>
-                <li><a href="teacher_enter_marks.php">My Marks</a></li>
+                <li><a href="teacher_view_students.php">View Students</a></li>
+                <li><a href="teacher_enter_marks.php">Add / Change Marks</a></li>
+                <li><a href="teacher_view_marks.php">View Marks</a></li>
                 <li><a href="teacher_logout.php">Logout</a></li>
                 
             </ul>
